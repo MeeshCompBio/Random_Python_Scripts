@@ -1,4 +1,10 @@
 # !/usr/bin/python3
+"""This script is to be used in conjunction with the Camoco software.
+It will perform go enrichments for every MCL cluster found within a network.
+"""
+
+# even though only a few packages are called in this script
+# all of them are needed for Camoco software built in function
 import sys
 import os
 import pandas as pd
