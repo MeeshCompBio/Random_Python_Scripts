@@ -61,7 +61,7 @@ for index, row in Clusters.iterrows():
         ClustDict[row[0]] = [index]
 
 # write out the header
-header = ("Cluster", "Term_info", "pval(BF)",
+header = ("Cluster", "Term_info", "loci", "pval(BF)",
           "Terms_tested", "Num_in_Common", "Term_size",
           "Num_of_terms", "Number_sampled", "Number_Universe")
 sys.stdout.write("\t".join(header)+"\n")
@@ -82,6 +82,7 @@ for key, value in ClustDict.items():
         # Pull out the relevant information
         for i in range(len(sigterms)):
             pval = str(sigterms[i].attrs["pval"])
+            loci = (",".join(map(str, sigterms[i].loci.intersection(genes))))
             terms_tested = sigterms[i].attrs["hyper"]["num_common"]
             num_common = sigterms[i].attrs["hyper"]["num_common"]
             num_universe = sigterms[i].attrs["hyper"]["num_universe"]
@@ -89,6 +90,7 @@ for key, value in ClustDict.items():
             num_terms = sigterms[i].attrs["hyper"]["num_terms"]
             num_sampled = sigterms[i].attrs["hyper"]["num_sampled"]
             final = itertools.chain([key], [sigterms[i]],
+                                    [loci],
                                     [pval], [terms_tested],
                                     [num_common], [term_size],
                                     [num_terms], [num_sampled],
