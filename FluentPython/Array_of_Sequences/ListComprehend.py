@@ -10,7 +10,7 @@ symbols = '$¢£¥€¤'
 codes = [ord(symbol) for symbol in symbols]
 codes
 
-#another example 
+# another example
 colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
@@ -22,7 +22,7 @@ for size in sizes:
 # rearrange order for sorting
 tshirts = [(color, size) for size in sizes for color in colors]
 
-#Generator expression
+# Generator expression
 symbols = '$¢£¥€¤'
 
 # If the generator expression is the single argument in a function call,
@@ -34,7 +34,6 @@ import array
 # generator expression are mandatory. The first argument of the array constructor
 # defines the storage type used for the numbers in the array
 array.array('I', (ord(symbol) for symbol in symbols))
-
 
 
 colors = ['black', 'white']
