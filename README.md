@@ -6,3 +6,6 @@ A collection of Python scripts
 
 ## Fluent Python
 * Working throught the Fluent Python book
+
+## Intro_to_Python_Packages
+* Information on Python package basics for CSCI 3003 (Introduction to computational biology)
