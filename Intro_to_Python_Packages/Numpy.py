@@ -16,3 +16,31 @@ sum(base_Array)/len(base_Array)
 # This is the numpy built in function
 Array.mean()
 # 12.6 µs to run command, way faster
+
+# 2D array
+TwoD = np.array([[0, 1, 2], [3, 4, 5]]) 
+TwoD.dim
+TwoD.shape
+
+# Index the array
+TwoD[:1]
+TwoD[1:]
+
+# Select a specific column
+TwoD[:,[1]]
+
+# Generating data for arrays
+# produce a sequence of numbers from 0 up to 5 at spacing 0.2
+t = np.arange(0, 5, 0.2)
+
+# produce a sequence of numbers from 0 to 100 at spacing 0.1
+a = np.arange(0,100,0.1)
+Zeros = np.zeros([100,100]) #creates a 100x100 matrix
+x = np.random.randn(10,10) #creates a 10x10 matrix of uniformly distributed
+#random numbers
+x = np.random.normal(10,2.5,[10,10]) #creates a 10x10 matrix of normally 
+                                      #distributed random numbers with mean 10, std.
+                                     #dev. 2.5
+# operations on arrays
+plusone = t + 1
+squared = t**2
