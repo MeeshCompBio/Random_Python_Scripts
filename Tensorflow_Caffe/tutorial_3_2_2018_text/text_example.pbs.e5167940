@@ -1,0 +1,22 @@
+2018-03-02 12:51:32.522266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla K40m major: 3 minor: 5 memoryClockRate(GHz): 0.745
+pciBusID: 0000:02:00.0
+totalMemory: 11.17GiB freeMemory: 11.09GiB
+2018-03-02 12:51:32.714037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 1 with properties: 
+name: Tesla K40m major: 3 minor: 5 memoryClockRate(GHz): 0.745
+pciBusID: 0000:84:00.0
+totalMemory: 11.17GiB freeMemory: 11.09GiB
+2018-03-02 12:51:32.714111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Device peer to peer matrix
+2018-03-02 12:51:32.714143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] DMA: 0 1 
+2018-03-02 12:51:32.714154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 0:   Y N 
+2018-03-02 12:51:32.714161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 1:   N Y 
+2018-03-02 12:51:32.714176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:02:00.0, compute capability: 3.5)
+2018-03-02 12:51:32.714184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: Tesla K40m, pci bus id: 0000:84:00.0, compute capability: 3.5)
+2018-03-02 12:51:33.354533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:02:00.0, compute capability: 3.5)
+2018-03-02 12:51:33.354584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: Tesla K40m, pci bus id: 0000:84:00.0, compute capability: 3.5)
+/panfs/roc/msisoft/anaconda/anaconda3-5.0.1/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+
+real	1m51.694s
+user	3m32.901s
+sys	0m21.671s

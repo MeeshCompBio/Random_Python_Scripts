@@ -1,0 +1,40 @@
+
+##############################################################################
+# Examples & Explanations
+# linear_regression.py  https://www.tensorflow.org/versions/r1.3/get_started/get_started
+# mnist_softmax.py      https://www.tensorflow.org/get_started/mnist/beginners
+# mnist_deep_net.py     https://www.tensorflow.org/get_started/mnist/pros
+
+
+###############################################################################
+# Get examples and run in a k40 batch job
+# On Mesabi:
+#
+cp -r /home/dhp/public/deep_learning/tensorflow/mnist .
+cd mnist
+qsub run_tensorflow_examples.pbs
+
+
+##############################################################################
+# Examine results (after job finishes)
+
+# Fit parameters (W,b) and loss:
+tail -1 linear_regression.out
+
+# Fractional accuracy of simple softmax method
+tail -1 softmax.out
+
+# Fractional accuracy of deep convolutional net method
+tail -1 deep_net.out
+
+
+# You should see something like:
+ln0003 % tail -1 linear_regression.out
+W: [-0.9999969] b: [ 0.99999082] loss: 5.69997e-11
+
+ln0003 % tail -1 softmax.out
+0.9129
+
+ln0003 % tail -1 deep_net.out
+test accuracy 0.9934
+
