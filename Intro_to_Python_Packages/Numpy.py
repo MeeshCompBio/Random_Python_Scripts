@@ -1,5 +1,4 @@
-# General examples of using numpy
-
+'''General examples of using numpy'''
 import numpy as np
 
 base_Array = [0, 1, 2, 3]
@@ -39,14 +38,19 @@ a = np.arange(0,100,0.1)
 # make an empty matrix
 Zeros = np.zeros([100,100]) 
 
-
+# return standard normal distribution for 10 x 10 array
 x = np.random.randn(10,10)
 
-#creates a 10x10 matrix of uniformly distributed
-x = np.random.normal(10,2.5,[10,10])
 # operations on arrays
 
-TwoD = np.array([[0, 1, 2], [3, 4, 5]]) 
+# Two dimentional array
+TwoD = np.array([[0, 1, 2], [3, 4, 5]])
+
+# Perform operations on the entire array
 plusone = TwoD + 1
+
+# Square the matrix
 squared = TwoD**2
+
+# Modify part of the array
 TwoD[:1] = TwoD[:1]+10
