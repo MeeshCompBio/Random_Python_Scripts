@@ -1,7 +1,7 @@
 # CSCI 3003 Lecture
 # Introduction to python packages
 
-##What is a Python package, module or library?
+## What is a Python package, module or library?
 * Modules are file containing Python definitions and statements
 * A package is a directory of Python modules
 * Unlike other languages, libraries are a very loose term in Python. They typically refer to a core set of modules.
