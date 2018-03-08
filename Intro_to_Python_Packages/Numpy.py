@@ -18,7 +18,7 @@ Array.mean()
 
 # 2D array
 TwoD = np.array([[0, 1, 2], [3, 4, 5]]) 
-TwoD.dim
+TwoD.ndim
 TwoD.shape
 
 # Index the array
