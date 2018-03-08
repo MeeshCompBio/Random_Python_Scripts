@@ -1,6 +1,5 @@
 '''General examples of using matplotlib'''
 
-#Stacked graph
 import matplotlib.pyplot as plt
 import numpy as np
 
