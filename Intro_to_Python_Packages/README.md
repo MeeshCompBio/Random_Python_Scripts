@@ -21,7 +21,7 @@ def Hello(n):
 ```
 If we save it as a python file called SayHello.py, we will be able to call on it later using other scripts or within an IDE.
 
-Open up your favorite python IDE lets test out our new function (Make sure you are in the same directory as your python function file)
+Open up your favorite python IDE and lets test out our new function (Make sure you are in the same directory as your python function file)
 ```bash
 # Open up ipython or your favorite python IDE
  ipython
@@ -36,7 +36,7 @@ Hi
 Hi
 Hi
 ```
-The resulting output will a "Hi" on each line with repect to the nuber used in the function
+The resulting output will show a "Hi" on each line with respect to the number used in the function
 ## Installing python packages
 There are multiple ways to install a python package, but the most popular method is to use pip
 ```bash
@@ -48,7 +48,7 @@ Keep in mind that this method does install packages across all versions of pytho
 ```bash
 python3.6 -m pip install numpy
 ```
-This will ensure that numpy is installed a s a package for python3.6. Here are some popular pip commands to help you with package management.
+This will ensure that numpy is installed as a package for python3.6. Here are some popular pip commands to help you with package management.
 ```bash
 # Install a package
 pip install <package_name>
@@ -61,7 +61,7 @@ pip freeze
 ```
 
 ## Numpy
-Numpy stands for numerical python. It is very fast and efficient at numerical calculations and supports large multidemtional arrays and matrices. It is faster and more memoery efficient than basic Python, but can only store one data type in an array.
+Numpy stands for numerical python. It is very fast and efficient at numerical calculations and supports large multidemtional arrays and matrices. It is faster and more memory efficient than basic Python, but can only store one data type in an array.
 ### Basic numpy examples
 ```python
 # make sure to import numpy
@@ -80,7 +80,7 @@ sum(base_Array)/len(base_Array)
 
 # This is the numpy built in function
 Array.mean()
-# 12.6 µs to run command, way faster
+# 12.6 µs to run command, the numpy method was way faster
 ```
 
 Two-dimensional array and indexing
@@ -163,7 +163,7 @@ array([[10, 11, 12],
 ```
 
 ## Pandas
-Python pandas is a data analysis library that is suited for a variety of data types. Unlike numpy it can handle a variety of data types, it is an important part of the statistical ecosystem, and is used extensively in commercial applications.
+Python pandas is a data analysis library that is suited for a variety of data types. It is an important part of the statistical ecosystem and is used extensively in commercial applications.
 ```python
 import pandas as pd
 import numpy as np
@@ -274,7 +274,7 @@ Mahfuz -0.258308 -0.258635  2.123565
 Meesh  -0.512175  0.546413 -0.759366
 ```
 
-Progression of turning in pandas dataframe to python list
+Progression of turning pandas dataframe in to python list
 ```python
 In [32]: df[2:3]
 Out[32]:
@@ -343,7 +343,7 @@ Skeletor -0.932789  0.720206  1.264533 -0.398572  1.824843
 ```
 
 ## Scipy
-Scipy is a scientific and numerical tools for python. The majority of its code is written in C or Fortran. It contains a larger variety of numerical algorithms wrapped up into modules
+Scipy is a set scientific and numerical tools for python. The majority of its code is written in C or Fortran and it contains a larger variety of numerical algorithms wrapped up into modules
 ```python
 import numpy as np
 #You can't just import scipy, you need to specify a module
@@ -365,7 +365,7 @@ array([ 1.12724554, -1.2469956 , -0.05542642,  1.09231569,  1.16645923,
 ```
 
 ## Matplotlib
-Matplitlib is a library for making plots in python (over 200k lines of code). Its philosophy centers around the idea that anyone should be able to create simple plots with very few lines of code.
+Matplotlib is a library for making plots in python (over 200k lines of code). Its philosophy centers around the idea that anyone should be able to create simple plots with very few lines of code.
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
