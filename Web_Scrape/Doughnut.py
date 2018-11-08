@@ -12,7 +12,7 @@ hdr = {'User-Agent': 'Mozilla/5.0'}
 # Initialize current results since it has not opened yet
 current = []
 
-# This will always be true so it will run contantly
+# This will always be true so it will run constantly
 while True:
     # pull request and page contents
     req = Request(site, headers=hdr)
@@ -24,7 +24,7 @@ while True:
 
     # initilaize the current object from first scrape
     if current == []:
-        current = update = soup.find_all(class_='location-news__check-back')
+        current = update
         print(current)
         # Wait until tomorrow to check
         time.sleep((24*3600))
